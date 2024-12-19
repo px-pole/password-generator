@@ -13,10 +13,26 @@
         <h1>Generate a <br><span id="h1-green">random password</span></h1>
         <h2>Never use an insecure password again.</h2>
         <button id="generate-password-btn">Generate passwords</button>
+        <div class="controls">
+            <div>
+                <label for="password-length">Password Length:</label>
+                <input type="number" id="password-length" value="15" min="6" max="42">
+            </div>
+            <div>
+                <label for="exclude-special">Exclude Special Characters:</label>
+                <input type="checkbox" id="exclude-special">
+            </div>
+        </div>
         <div class="line"></div>
         <div class="passwords-fields">
-            <div id="password-one"></div>
-            <div id="password-two"></div>
+            <div class="password-container-one">
+                <div id="password-one"></div>
+                <button class="copy-btn" data-target="password-one">Copy</button>
+            </div>
+            <div class="password-container-two">
+                <div id="password-two"></div>
+                <button class="copy-btn" data-target="password-one">Copy</button>
+            </div>
         </div>
     </div>
 </body>
