@@ -23,19 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return password;
     }
 
-    // function copyToClipboard(targetId) {
-    //     const textToCopy = document.getElementById(targetId).textContent;
-    //     if (textToCopy) {
-    //         navigator.clipboard.writeText(textToCopy).then(() => {
-    //             alert(`Copied: ${textToCopy}`);
-    //         }).catch(() => {
-    //             alert('Failed to copy password.');
-    //         });
-    //     } else {
-    //         alert('No password to copy!');
-    //     }
-    // }
-
     generatePasswordsBtn.addEventListener("click", function () {
         const passwordLength = parseInt(passwordLengthInput.value, 10) || 15;
         const excludeSpecial = excludeSpecialCheckbox.checked;
